@@ -1,0 +1,72 @@
+body{
+    margin: 0; 
+    background: rgb(73, 69, 69);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    color: white;
+    background-color: darkcyan;
+    padding: 10px 20px;
+    border-bottom: dashed;
+
+}
+
+
+
+.name{
+    
+    margin: 0;
+}
+
+.left-side, .right-side{ 
+    display: flex;   
+    gap: 40px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.header a,
+.header a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.graduation{
+    width: 20rem;
+    height: 25rem;
+    border-radius: 5%;
+    border: dashed white;
+    transform: rotate(-10deg);
+    
+}
+
+.baby{
+    width: 20rem;
+    height: 25rem;
+    border-radius: 5%;
+    border: dashed white;
+    transform: rotate(270deg);
+}
+
+.cousins{
+    width: 20rem;
+    height: 25rem;
+    border-radius: 5%;
+    border: dashed white;
+    transform: rotate(10deg);
+}
+
