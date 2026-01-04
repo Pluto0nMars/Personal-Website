@@ -84,7 +84,7 @@ body{
     width: 20rem;
     height: 25rem;
     border-radius: 5%;
-    border: dashed white;
+    border: solid white;
     transform: rotate(10deg);
 }
 
