@@ -1,18 +1,25 @@
 body{
     margin: 0; 
-    background: rgb(73, 69, 69);
+    background: rgb(32, 30, 30);
 }
 
 * {
     box-sizing: border-box;
 }
 
+.experience,
+.projects,
+.tech span,
+.date {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco,
+                 Consolas, Liberation Mono, Courier New, monospace;
+}
 
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;  
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Inter', system-ui, sans-serif;
 
     top: 0;
     left: 0;
@@ -21,7 +28,7 @@ body{
     color: white;
     background-color: darkcyan;
     padding: 10px 20px;
-    border-bottom: dashed;
+    border-bottom: solid;
 
 }
 
@@ -38,6 +45,12 @@ body{
     font-size: 20px;
     text-decoration: none;
 }
+
+.header a svg{
+    position: relative;
+    top: 4px;
+}
+    
 
 .header a,
 .header a:visited {
@@ -64,7 +77,7 @@ body{
     width: 20rem;
     height: 25rem;
     border-radius: 5%;
-    border: dashed white;
+    border: 1px solid white;
     transform: rotate(-10deg);
     margin-left: 80px;
     
@@ -80,42 +93,16 @@ body{
    margin-right: 50px;
 }
 
-.cousins{
-    width: 20rem;
-    height: 25rem;
-    border-radius: 5%;
-    border: solid white;
-    transform: rotate(10deg);
-}
 
 .jokic{
     width: 27rem;
     height: 20rem;
     border-radius: 5%;
-    border: dashed white;
+    border: 1px solid white;
     transform: rotate(10deg);
     margin-left: 10px;
 }
 
-.scott{
-    width: 20rem;
-    height: 25rem;
-    border-radius: 5%;
-    border: dashed white;
-    transform: rotate(10deg);
-    margin-left: 80px;
-    margin-right: 27px;
-    margin-top: 10px
-}
-
-.f1{
-    width: 27rem;
-    height: 20rem;
-    border-radius: 5%;
-    border: dashed white;
-    transform: rotate(10deg);
-    margin-left: 80px;
-}
 
 
 
@@ -136,16 +123,16 @@ body{
 
 
 .about-me{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
+    font-family: 'Inter', system-ui, sans-serif;
+   
     color: white;
     border-radius: 10%;
     border: solid white;
     background-color: rgb(79, 187, 187);
     font-size: 1.25rem;
     align-items: center;
-    width: 22rem;
-    height: 25rem;
+    width: 23rem;
+    height: 23rem;
     text-align: center;
 }
 
@@ -156,30 +143,50 @@ body{
 
 }
 
-.skills{
-    display: flex;
-    gap: 60px;
-}
-
-.tech-container > h3{
-    text-align: center;
-    font-size: 1.5rem;
-    margin-top: -40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-;
-}
-
-
-.tech-skills{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
+.experience{
+    margin-top: 120px;
+    padding: 0 80px;
     color: white;
-    border-radius: 10%;
-    border: solid white;
-    background-color: rgb(79, 187, 187);
-    font-size: 1.25rem;
-    align-items: center;
-    width: 23rem;
-    height: 15rem;
-    text-align: center;
+}
+
+.experience h2{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.experience-card{
+    background: rgb(32, 30, 30);
+    border: 1px solid white;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.experience-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.experience-title{
+    display: flex;
+    gap: 10px;
+    color: darkcyan;
+}
+
+.experience-title h3 {
+    margin-top: -.5px ;
+}
+
+
+.tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tech span{
+    padding: 6px 10px;
+    font-size: 14px;
+    background-color: gray;
+    color: darkcyan;
 }

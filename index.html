@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
 </head>
 <body>
     <div class="header">
 
         <div class="left-side">
-            <a href="https://www.linkedin.com/in/sola-akindele-731332278/" target="_blank" rel="noopener noreferrer">linkedIn</a>
-            <a href="pages/projects.html"> Projects</a>
+            <a href="https://www.linkedin.com/in/sola-akindele-731332278/" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="user"></i>
+                about
+            </a>
+            <a href="pages/projects.html">
+                <i data-lucide="folder"></i>
+                 projects
+            </a>
         </div>
         
         <div class="middle-section">
@@ -19,8 +27,14 @@
         </div>
         
         <div class="right-side">
-            <a href="links/AkinsolaAkindele_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-            <a href="https://github.com/Pluto0nMars" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="links/AkinsolaAkindele_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="book-open"></i>
+                resume
+            </a>
+            <a href="https://github.com/Pluto0nMars" target="_blank" rel="noopener noreferrer">
+                <i data-lucide="briefcase"></i>
+                experience
+            </a>
         </div>
        
     </div>
@@ -47,53 +61,78 @@
                 </div>
             <img class="jokic" src="images/jokic.jpg">
         </div>
-        <div class="skills">
-           
-            <img class="scott" src="images/spvw.jpg">
-            <img class="baby" src="images/3_years.jpg">
-            <div class="tech-container">
-                <h3 class="tech"> Tech Stack / Skills </h3>
-                <p class="tech-skills">
-                    <br>
-                    <br>
-                    Languges: Python, C++, C, Java, SQL
-                    <br>
-                    <br>
-                    Frameworls: Flask
-                    <br>
-                    <br>
-                    Tools: Git, Linux, GDB
+
+        <section class="experience">
+            <h2>Experience</h2>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class=experience-title>
+                        <i data-lucide="briefcase"></i>
+                        <h3> Argonne National laboratory: Research Aide</h3>
+                    </div>
+                    <span class="date">May 2024 – Jul 2024</span>
+                </div>
+                <p> Provided AI models for a data science project for 12 weeks. Utilized
+                    the PyTorch library, <br> linear, and nonlinear 
+                    learning models while using image classification.
                 </p>
+
+                <div class="tech">
+                    <span>PyTorch</span>
+                    <span>Python</span>
+                </div>
             </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class=experience-title>
+                        <i data-lucide="briefcase"></i>
+                        <h3> UIC: Calculus Teaching Assistant </h3>
+                    </div>
+                    <span class="date">Oct 2024 – Dec 2025</span>
+                </div>
+                <p> Mentored 400+ students through discussions and technical topics in UIC’s Calculus I, II courses.
+                </p>
+
+                <div class="tech">
+                    <span>Calculus</span>
+                    <span>Algebra</span>
+                </div>
+            </div>
+
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div class=experience-title>
+                        <i data-lucide="briefcase"></i>
+                        <h3> UIC: Teaching Assistant — Data Structures </h3>
+                    </div>
+                    <span class="date">Aug 2025 – Present</span>
+                </div>
+                <p> Mentored 400+ students through labs,projects, and technical topics in UIC’s Data Structures course.
+                </p>
+
+                <div class="tech">
+                    <span>C++</span>
+                    <span>GDB</span>
+                </div>
+            </div>
+
+            
+        </section>
+        <div class="projects">
+           
         </div>
-       
-
-
-        <img class="f1" src="images/verstappen.jpg">
-        <img class="cousins" src="images/12_years.JPG">
+    
         
     </div>
 
     <div class="Bottom">
-        <h3> Contact </h3>
-        <div class="contact-links">
-            <a href="mailto:aakindelen132@gmail.com">
-                aakindelen132@gmail.com
-            </a>
-            <a href="https://www.linkedin.com/in/sola-akindele-731332278/">
-                LinkedIn
-            </a>
-            <a href="https://github.com/Pluto0nMars">
-                GitHub
-            </a>
-
-        </div>
-
-         <p class="footer-note">
-            © 2026 Sola Akindele
-        </p>
         
     </div>
+    <script>
+        lucide.createIcons();
+    </script>
 
 </body>
 </html>
