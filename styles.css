@@ -1,11 +1,16 @@
 body{
     margin: 0; 
-    background: rgb(32, 30, 30);
+    background: rgb(26, 24, 24);
 }
 
 * {
     box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 
 .experience,
 .projects,
@@ -35,7 +40,6 @@ body{
 
 
 .name{
-    
     margin: 0;
 }
 
@@ -59,6 +63,10 @@ body{
     text-decoration: none;
     border-radius: 6px;
 
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
     transition: color 0.2s ease,;
     background-color: 0.2s ease;
 }
@@ -69,15 +77,15 @@ body{
 }
 
 .header a:hover{
-    color: gray;
+    color: rgb(71, 69, 69);
     background-color: rgba(255, 255, 255, 0.2);
     
 }
 .graduation{
     width: 20rem;
     height: 25rem;
-    border-radius: 5%;
-    border: 1px solid white;
+    
+    
     transform: rotate(-10deg);
     margin-left: 80px;
     
@@ -97,8 +105,8 @@ body{
 .jokic{
     width: 27rem;
     height: 20rem;
-    border-radius: 5%;
-    border: 1px solid white;
+    
+   
     transform: rotate(10deg);
     margin-left: 10px;
 }
@@ -126,8 +134,8 @@ body{
     font-family: 'Inter', system-ui, sans-serif;
    
     color: white;
-    border-radius: 10%;
-    border: solid white;
+  
+    border: 1px solid white;
     background-color: rgb(79, 187, 187);
     font-size: 1.25rem;
     align-items: center;
@@ -155,8 +163,8 @@ body{
 }
 
 .experience-card{
-    background: rgb(32, 30, 30);
-    border: 1px solid white;
+    background: rgb(26, 24, 24);
+    border: .5px solid rgb(161, 156, 156);
     padding: 25px;
     margin-bottom: 25px;
 }
@@ -170,7 +178,7 @@ body{
 .experience-title{
     display: flex;
     gap: 10px;
-    color: darkcyan;
+    color: rgb(34, 201, 201);
 }
 
 .experience-title h3 {
@@ -187,6 +195,94 @@ body{
 .tech span{
     padding: 6px 10px;
     font-size: 14px;
-    background-color: gray;
-    color: darkcyan;
+    background-color: rgb(94, 94, 94);
+    color: rgb(34, 201, 201);
 }
+
+.projects{
+    margin-top: 15px;
+    padding: 0 80px;
+    color: white;
+}
+
+.projects h2{
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.project-header{
+    display: flex;
+    gap: 10px;
+    color: rgb(34, 201, 201);
+}
+
+.project-header h3{
+    margin-top: -.5px ;
+}
+
+.project-card{
+    background: rgb(26, 24, 24);
+    border: .5px solid rgb(161, 156, 156);
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-bottom svg:hover{
+    color: rgb(34, 201, 201);
+}
+
+#card:hover{
+     border: .5px solid rgb(34, 201, 201);
+    
+}
+
+.project-group{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+.bottom-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 40px;
+
+}
+
+.bottom-section a{
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco,
+    Consolas, Liberation Mono, Courier New, monospace;
+    padding: 6px 10px;
+
+    font-size: 15px;
+    background: rgb(26, 24, 24);
+    border: .5px solid rgb(161, 156, 156);
+    color: rgb(34, 201, 201);
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+
+}
+
+
+.bottom-section a:hover{
+    border-color: rgb(34, 201, 201) ;
+}
+
+.bottom-section a svg{
+    position: relative;
+    width: 20px;
+    height: 20px;
+
+}
+
