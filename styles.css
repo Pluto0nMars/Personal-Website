@@ -37,8 +37,6 @@ html {
 
 }
 
-
-
 .name{
     margin: 0;
 }
@@ -131,17 +129,22 @@ html {
 
 
 .about-me{
-    font-family: 'Inter', system-ui, sans-serif;
+   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco,
+                 Consolas, Liberation Mono, Courier New, monospace;
    
-    color: white;
+    color: rgb(236, 240, 240);
   
-    border: 1px solid white;
-    background-color: rgb(79, 187, 187);
-    font-size: 1.25rem;
+    border: .05rem solid rgb(170, 168, 168);
+    background: rgb(26, 24, 24);
+    font-size: 1.2rem;
     align-items: center;
-    width: 23rem;
+    width: 23.5rem;
     height: 23rem;
     text-align: center;
+}
+
+.ab-title{
+    color: rgb(34, 201, 201);
 }
 
 .ab-header{
@@ -225,6 +228,7 @@ html {
     border: .5px solid rgb(161, 156, 156);
     padding: 25px;
     margin-bottom: 10px;
+    transition: color 0.2s ease;
 }
 
 .card-bottom{
@@ -271,9 +275,9 @@ html {
     align-items: center;
     gap: 8px;
     text-decoration: none;
+    transition: color 0.2s ease;
 
 }
-
 
 .bottom-section a:hover{
     border-color: rgb(34, 201, 201) ;
@@ -285,4 +289,20 @@ html {
     height: 20px;
 
 }
+
+
+.project-group a,.project-group a:visited{
+    text-decoration: none;
+    
+}
+
+.project-card p {
+    color: white;
+}
+
+.card-bottom svg {
+    color: white;
+    transition: color 0.2s ease;
+}
+
 
